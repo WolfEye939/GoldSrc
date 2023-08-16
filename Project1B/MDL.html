@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="Cache-Control" content="no-store" />
+
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="icon" type="image/x-icon" href="./img/QC.ico">
+        <script src="./scripts/script.js" defer></script>
+
+        <title>QC Editing</title>
+    </head>
+
+    <body>
+        <header>
+
+
+            <p class="links">
+                <a href="index.html" class="links">home</a>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                <a href="VDF.html" class="links">VDF</a>
+            </p>
+            <h1 class="menu">What is the MDL format?</h1>
+
+        </header>
+
+        
+        <main>
+            <pre class="par">
+                While an MDL file may have been used by MANY programs from the 90's and early 2000's, The focus here is Valve's MDL format for Gold-source. An MDL file Consists of 3 files:
+            </pre>
+            
+            <ul>
+                <li>".QC" (<b>Q</b>.uake <b>C</b>) A script file that compiles SMD files, assigns animation SMD's and locates textures. </li>
+                    <p class="desc">static (non-animated) QC template</p>
+
+                    <pre class="smple">
+$modelname Cube.mdl
+$cd "./"
+$scale 1
+$cliptotextures
+// reference mesh
+$body studio cube
+// Animation
+$sequence "static" "cube"
+</pre>
+
+                    <a href="QC.html" class="info">more on QC scripting</a>
+
+                <li>".SMD" (<b>S</b>.tudio <b>M</b>.DL <b>D</b>.ata) A three dimensional model file used by the Source and Gold-source engine, it is stored in an ASCII text format, However it should be noted that technically there are <b>2</b> SMD types: Model data and animation data</li>
+                    <p class="desc">Example SMD (src file name: Cube.smd*)</p>
+                
+                    <pre class="smple">
+version 1
+nodes
+0 "root" -1
+end
+skeleton
+time 0
+0 0 0 0 0 0 0
+end
+triangles
+mat.bmp
+0  1.000000 1.000000 -1.000000  0.000000 0.000000 -1.000000  0.000000 1.000000
+0  1.000000 -1.000000 -1.000000  0.000000 0.000000 -1.000000  0.000000 0.666667
+0  -1.000000 -1.000000 -1.000000  0.000000 0.000000 -1.000000  0.333333 0.666667
+mat.bmp
+0  1.000000 0.999999 1.000000  0.000000 0.000000 1.000000  1.000000 0.333333
+0  -1.000000 1.000000 1.000000  0.000000 0.000000 1.000000  1.000000 0.666667
+0  -1.000000 -1.000000 1.000000  0.000000 0.000000 1.000000  0.666667 0.666667
+mat.bmp
+0  1.000000 1.000000 -1.000000  1.000000 -0.000001 -0.000000  1.000000 0.333333
+0  1.000000 0.999999 1.000000  1.000000 -0.000001 -0.000000  0.666667 0.333333
+0  0.999999 -1.000001 1.000000  1.000000 -0.000001 -0.000000  0.666667 0.000000
+mat.bmp
+0  1.000000 -1.000000 -1.000000  -0.000000 -1.000000 -0.000000  0.333333 0.333333
+0  0.999999 -1.000001 1.000000  -0.000000 -1.000000 -0.000000  0.333333 0.000000
+0  -1.000000 -1.000000 1.000000  -0.000000 -1.000000 -0.000000  0.666667 0.000000
+mat.bmp
+0  -1.000000 -1.000000 -1.000000  -1.000000 0.000000 -0.000000  0.333333 0.666667
+0  -1.000000 -1.000000 1.000000  -1.000000 0.000000 -0.000000  0.000000 0.666667
+0  -1.000000 1.000000 1.000000  -1.000000 0.000000 -0.000000  0.000000 0.333333
+mat.bmp
+0  1.000000 0.999999 1.000000  0.000000 1.000000 0.000000  0.000000 0.000000
+0  1.000000 1.000000 -1.000000  0.000000 1.000000 0.000000  0.333333 0.000000
+0  -1.000000 1.000000 -1.000000  0.000000 1.000000 0.000000  0.333333 0.333333
+mat.bmp
+0  -1.000000 1.000000 -1.000000  0.000000 0.000000 -1.000000  0.333333 1.000000
+0  1.000000 1.000000 -1.000000  0.000000 0.000000 -1.000000  0.000000 1.000000
+0  -1.000000 -1.000000 -1.000000  0.000000 0.000000 -1.000000  0.333333 0.666667
+mat.bmp
+0  0.999999 -1.000001 1.000000  0.000000 0.000000 1.000000  0.666667 0.333333
+0  1.000000 0.999999 1.000000  0.000000 0.000000 1.000000  1.000000 0.333333
+0  -1.000000 -1.000000 1.000000  0.000000 0.000000 1.000000  0.666667 0.666667
+mat.bmp
+0  1.000000 -1.000000 -1.000000  1.000000 -0.000000 0.000000  1.000000 0.000000
+0  1.000000 1.000000 -1.000000  1.000000 -0.000000 0.000000  1.000000 0.333333
+0  0.999999 -1.000001 1.000000  1.000000 -0.000000 0.000000  0.666667 0.000000
+mat.bmp
+0  -1.000000 -1.000000 -1.000000  -0.000000 -1.000000 0.000000  0.666667 0.333333
+0  1.000000 -1.000000 -1.000000  -0.000000 -1.000000 0.000000  0.333333 0.333333
+0  -1.000000 -1.000000 1.000000  -0.000000 -1.000000 0.000000  0.666667 0.000000
+mat.bmp
+0  -1.000000 1.000000 -1.000000  -1.000000 0.000000 -0.000000  0.333333 0.333333
+0  -1.000000 -1.000000 -1.000000  -1.000000 0.000000 -0.000000  0.333333 0.666667
+0  -1.000000 1.000000 1.000000  -1.000000 0.000000 -0.000000  0.000000 0.333333
+mat.bmp
+0  -1.000000 1.000000 1.000000  0.000000 1.000000 0.000000  0.000000 0.333333
+0  1.000000 0.999999 1.000000  0.000000 1.000000 0.000000  0.000000 0.000000
+0  -1.000000 1.000000 -1.000000  0.000000 1.000000 0.000000  0.333333 0.333333
+end
+                        </pre>
+                    <li>".BMP" (<b>B</b>it<b>m</b>a<b>p</b>), a fairly common image format but with <i>very</i> specific properties; an 8-bit indexed color format, meaning the Color pallete/range is embedded within the image instead of the OS providing the colors; and a maximum size of 512×512</li>
+                        <img src="./img/Mat.bmp">
+                        <p>An Image texture with the proper specifications <i>and</i> name that correlates with the SMD example above</p>
+                </ul>
+
+                <p>When these assets are compiled the end result is shown below:</p>
+                <img src="./img/cube.png">
+                <!--
+                    ".VMT" (<b>V</b>.alve <b>M</b>.aterial <b>T</b>.ype), and ".VTF" (<b>V</b>.alve <b>T</b>.exture <b>F</b>.ile).
+                -->
+        </main>
+        
+        <br>
+        <br>
+
+        <footer>
+            <p>* Sourced from Blender's default Cube Exported as a Gold-source SMD**</p>
+            <p>** You can get the most recent version of the Blender Source tools <a href="http://steamreview.org/BlenderSourceTools/" target="_blank">Here</a></p>
+        </footer>
+    </body>
+</html>

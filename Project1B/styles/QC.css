@@ -1,0 +1,34 @@
+mdlname, cd, cdtex, scale, studio, seq 
+{
+    font-weight: bolder;
+}
+
+mdlname 
+{
+    color:rgb(218, 19, 58);
+}
+
+cd 
+{
+    color: aqua;
+}
+
+cdtex 
+{
+    color:aquamarine;
+}
+
+scale 
+{
+    color:chartreuse;
+}
+
+studio 
+{
+    color:darkviolet;
+}
+
+seq 
+{
+    color: lightgray;
+}

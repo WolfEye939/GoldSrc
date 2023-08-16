@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta http-equiv="Cache-Control" content="no-store" />
+
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/QC.css">
+        <link rel="icon" type="image/x-icon" href="./img/HL.ico">
+        <script src="./scripts/script.js" defer></script>
+
+        <title>Home</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="menu">Goldsource editing</h1>
+
+            <p class="links">
+                <a href="index.html" class="links">home</a>
+                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                <a href="VDF.html" class="links">VDF Language</a>
+            </p>
+        </header>
+
+
+        <main>
+            <h3 class="topic">What is within a .QC file?</h3>
+
+            <p>I will be using the following QC file (called "cube.QC") as a reference. this is as simple as a QC file can possibly be</p>
+
+            <pre class="smple">
+<a href="#mdlname"><mdlname>$modelname Cube.mdl</mdlname></a>
+
+<a href="#cd"><cd>$cd "./"</cd></a>
+
+<a href="#cdtex"><cdtex>$cdtexture "./textures"</cdtex></a>
+
+<a href="#scale"><scale>$scale 1</scale></a>
+
+$cliptotextures
+
+    // reference mesh
+<a href="#studio"><studio>$body studio cube</studio></a>
+    
+    // Animation
+<a href="#seq"><seq>$sequence "static" "cube"</seq></a>
+            </pre>
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>
