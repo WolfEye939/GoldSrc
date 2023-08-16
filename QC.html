@@ -96,7 +96,13 @@
                     <span class="studio">$body</span>
                 </button>
                 <div class="content">
-                    <p><b class="studio">$body</b>: </p>
+                    <pre style="color: #ffa704;">
+<b class="studio">$body</b>: Tells studioMDL what .SMD file to use and the name. In this case, "<i>studio</i>" is the name and "cube" is the SMD file
+    in goldsrc  you don't need to add ".QC" to the file name, however in Source you need to add the ".QC" file extension
+    This is the MOST important attribute since this is how studioMDL creates a model (i.e you cant make the MDL without the SMD file.).
+    It should <i><b>ALSO</b></i> be noted that this will be used as the <i>main reference mesh</i>, 
+    meaning that geometry, and positioning need to be the same as in this file
+                    </pre>
                 </div>
             </div>
         </main>
