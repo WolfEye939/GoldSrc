@@ -9,10 +9,13 @@
 
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="stylesheet" href="./styles/QC.css">
+        <link rel="stylesheet" href="./styles/drop.css">
         <link rel="icon" type="image/x-icon" href="./img/HL.ico">
-        <script src="./scripts/script.js" defer></script>
 
-        <title>Home</title>
+        <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/collapse.js" defer></script>
+
+        <title>QC Language</title>
     </head>
 
     <body>
@@ -53,10 +56,26 @@ $cliptotextures
             <div>
                 <h3 class="sub">Each area will be explained below:</h3>
 
-                <p id="mdlname"><b class="mdlname">$modelname</b>: This simply tells the compiler (studioMDL) what the file output will be named. This needs to be first and is required.</p>
+                <button type="button" class="collapsible">
+                    <span class="mdlname">$modelname</span>
+                </button>
+                <div class="content">
+                    <p id="mdlname"><b class="mdlname">$modelname</b>: This simply tells the compiler (studioMDL) what the file output will be named. This needs to be first and is required.</p>
+                </div>
+ 
+                <button type="button" class="collapsible">
+                    <span class="cd">$cd</span>
+                </button>
+                <div class="content">
+                    <p id="cd"><b class="cd">$cd</b>: Tells the compliler the root directory. In this case "./" simply points to the directory that "cube.QC" resides in. This is ALSO a requirement, and needs to be placed after the <a href="#mdlname" class="mdlname">$modelname</a> attribute; it should <i>also</i> be noted that this can only be called once.</p>
+                </div>
 
-                <p id="cd"><b class="cd">$cd</b>: Tells the compliler the root directory. In this case "./" simply points to the directory that "cube.QC" resides in. This is ALSO a requirement, and needs to be placed after the <a href="#mdlname" class="mdlname">$modelname</a> attribute; it should <i>also</i> be noted that this can only be called once.</p>
-                <p id="cdtex"><b class="cdtex">$cdtexture</b>: Purpose is similar to <span class="cd">$cd</span> but tells the compiler where to look for textures. This attribute isn't required but is <i>Highly reccommended</i> if you want to have your texture images in a separate directory. "./textures" simply points toward a folder named textures. Also note that if the appropriate images aren't detected by studioMDL it will not compile the model.</p>
+                <button type="button" class="collapsible">
+                    <span class="cdtex">$cdtexture</span>
+                </button>
+                <div class="content">
+                    <p id="cdtex"><b class="cdtex">$cdtexture</b>: Purpose is similar to <span class="cd">$cd</span> but tells the compiler where to look for textures. This attribute isn't required but is <i>Highly reccommended</i> if you want to have your texture images in a separate directory. "./textures" simply points toward a folder named textures. Also note that if the appropriate images aren't detected by studioMDL it will not compile the model.</p>
+                </div>
             </div>
         </main>
 
