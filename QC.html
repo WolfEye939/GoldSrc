@@ -49,6 +49,15 @@ $cliptotextures
     // Animation
 <a href="#seq"><seq>$sequence "static" "cube"</seq></a>
             </pre>
+
+            <div>
+                <h3 class="sub">Each area will be explained below:</h3>
+
+                <p id="mdlname"><b class="mdlname">$modelname</b>: This simply tells the compiler (studioMDL) what the file output will be named. This needs to be first and is required.</p>
+
+                <p id="cd"><b class="cd">$cd</b>: Tells the compliler the root directory. In this case "./" simply points to the directory that "cube.QC" resides in. This is ALSO a requirement, and needs to be placed after the <a href="#mdlname" class="mdlname">$modelname</a> attribute; it should <i>also</i> be noted that this can only be called once.</p>
+                <p id="cdtex"><b class="cdtex">$cdtexture</b>: Purpose is similar to <span class="cd">$cd</span> but tells the compiler where to look for textures. This attribute isn't required but is <i>Highly reccommended</i> if you want to have your texture images in a separate directory. "./textures" simply points toward a folder named textures. Also note that if the appropriate images aren't detected by studioMDL it will not compile the model.</p>
+            </div>
         </main>
 
         <footer>

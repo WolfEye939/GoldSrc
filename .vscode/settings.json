@@ -1,0 +1,33 @@
+{
+    "workbench.colorTheme": "Steam Classic",
+    "workbench.colorCustomizations": {
+        "debugConsole.sourceForeground": "#068f01",
+        "terminal.background": "#000000",
+        "terminal.foreground": "#068f01",
+        "editor": "#068f01",
+        "debugConsole.infoForeground": "#068f01"
+    },
+    "launch": {
+    
+        "configurations": [{
+            "name": "crank dat soldja boi",
+            "request": "launch",
+            "type": "msedge",
+            "url": "${workspaceFolder}",
+            "webRoot": "${workspaceFolder}"
+        }]
+    },
+    
+    "media.player": {
+        "players": [
+            {
+                "name": "My VLC player",
+                "type": "vlc",
+
+                "password": "striker12",
+                "port": 8080
+            }
+        ]
+    }
+}
+

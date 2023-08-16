@@ -3,17 +3,17 @@ mdlname, cd, cdtex, scale, studio, seq
     font-weight: bolder;
 }
 
-mdlname 
+mdlname, .mdlname
 {
     color:rgb(218, 19, 58);
 }
 
-cd 
+cd, .cd
 {
     color: aqua;
 }
 
-cdtex 
+cdtex, .cdtex
 {
     color:aquamarine;
 }
