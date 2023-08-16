@@ -1,4 +1,4 @@
-mdlname, cd, cdtex, scale, studio, seq 
+mdlname, cd, cdtex, scale, studio, seq, ctt
 {
     font-weight: bolder;
 }
@@ -18,12 +18,17 @@ cdtex, .cdtex
     color:aquamarine;
 }
 
-scale 
+scale, .scale
 {
     color:chartreuse;
 }
 
-studio 
+ctt, .ctt
+{
+    color:rgb(161, 0, 161);
+}
+
+studio, .studio
 {
     color:darkviolet;
 }

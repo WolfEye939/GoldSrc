@@ -44,12 +44,12 @@
 
 <a href="#scale"><scale>$scale 1</scale></a>
 
-$cliptotextures
+<ctt>$cliptotextures</ctt>
 
-    // reference mesh
+//reference mesh
 <a href="#studio"><studio>$body studio cube</studio></a>
     
-    // Animation
+//Animation
 <a href="#seq"><seq>$sequence "static" "cube"</seq></a>
             </pre>
 
@@ -75,6 +75,28 @@ $cliptotextures
                 </button>
                 <div class="content">
                     <p id="cdtex"><b class="cdtex">$cdtexture</b>: Purpose is similar to <span class="cd">$cd</span> but tells the compiler where to look for textures. This attribute isn't required but is <i>Highly reccommended</i> if you want to have your texture images in a separate directory. "./textures" simply points toward a folder named textures. Also note that if the appropriate images aren't detected by studioMDL it will not compile the model.</p>
+                </div>
+
+                <button type="button" class="collapsible">
+                    <span class="scale">$scale</span>
+                </button>
+                <div class="content">
+                    <p><b class="scale">$scale</b>: Sets the model scale of any meshes called after it. setting the Value of scale to 1 "Normalizes" it, This is to ensure that the model you were viewing in your model editor (blender, 3ds max, Maya, etc) will be the same size, instead of some scale set by the model editor.</p>
+                    <p>As a side note you can also place another $scale attribute if you wanted a body group to be a different size, although the compiler can have trouble dealing with this.</p>
+                </div>
+
+                <button type="button" class="collapsible">
+                    <span class="ctt">$cliptotextures</span>
+                </button>
+                <div class="content">
+                    <p><b class="ctt">$cliptotextures</b>: <i>WAY</i> TO CONFUSING SORRY</p>
+                </div>
+
+                <button type="button" class="collapsible">
+                    <span class="studio">$body</span>
+                </button>
+                <div class="content">
+                    <p><b class="studio">$body</b>: </p>
                 </div>
             </div>
         </main>
