@@ -46,6 +46,13 @@ h1, p, a:visited                /* Global values for most text elements */
     border: 1mm solid #000000;
 }
 
+p.links {
+    text-align: center;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 a.links 
 {
     border: 1.5mm #ff7f50;

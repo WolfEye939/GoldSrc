@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="icon" type="image/x-icon" href="./img/HL.ico">
         <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/collapse.js" defer></script>
 
         <title>Home</title>
     </head>
@@ -18,11 +19,16 @@
         <header>
             <h1 class="menu">Goldsource editing</h1>
 
-            <p class="links">
+            <div class="links">
                 <a href="index.html" class="links">home</a>
-                &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                <a href="VDF.html" class="links">VDF Language</a>
-            </p>
+                <button type="button" class="collapsible">
+                    <span>VDF</span>
+                </button>
+                <div class="content">
+                    <p><a href="VDF.html" class="content">VDF Language</a></p>
+                    <p><a href="mdl.html" class="content">MDL</a></p>
+                </div>
+            </div>
         </header>
 
 

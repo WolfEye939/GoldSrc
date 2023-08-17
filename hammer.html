@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./styles/styles.css">
         <link rel="icon" type="image/x-icon" href="./img/hammer.ico">
         <script src="./scripts/script.js" defer></script>
+        <script src="./scripts/collapse.js" defer></script>
 
         <title>Hammer Editor</title>
     </head>
@@ -16,11 +17,18 @@
         <header>
             <h1 class="menu">Hammer editor</h1>
 
-            <p class="links">
+            <div class="links">
                 <a href="index.html" class="links">home</a>
                 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                <a href="VDF.html" class="links">VDF Language</a>
-            </p>
+
+                <button type="button" class="collapsible">
+                    <span>VDF</span>
+                </button>
+                <div class="content">
+                    
+                    <p><a href="VDF.html">VDF Language</a></p>
+                </div>
+            </div>
         </header>
 
 
