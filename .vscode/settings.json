@@ -30,7 +30,8 @@
         ]
     },
     "liveServer.settings.showOnStatusbar": true,
-    "workbench.settings.openDefaultSettings": true
+    "workbench.settings.openDefaultSettings": true,
+    "liveServer.settings.file": "./404.html"
 }
 /*    
     "media.player": {
