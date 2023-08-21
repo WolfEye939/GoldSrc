@@ -41,7 +41,6 @@ h1, p, a:visited                /* Global values for most text elements */
 
 .links 
 {    /* Values for links (menu-based) elements */
-
     text-align: center;
     border: 1mm solid #000000;
 }

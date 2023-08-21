@@ -1,5 +1,7 @@
 {
+    /*--------Theme configuration------------------*/
     "workbench.colorTheme": "Steam Classic",
+        /*-------Color-------*/
     "workbench.colorCustomizations": {
         "debugConsole.sourceForeground": "#068f01",
         "terminal.background": "#000000",
@@ -7,17 +9,30 @@
         "editor": "#068f01",
         "debugConsole.infoForeground": "#068f01"
     },
-    "launch": {
-    
-        "configurations": [{
-            "name": "crank dat soldja boi",
-            "request": "launch",
-            "type": "msedge",
-            "url": "${workspaceFolder}",
-            "webRoot": "${workspaceFolder}"
-        }]
+
+    "“terminal.external.osxExec”": "iTerm.app",
+    "“terminal.integrated.shell.osx”": "/bin/zsh",
+    "“terminal.integrated.fontFamily”": "'FixedSys Regular'",
+    "debugConsole.integrated.FontFamily": "'FixedSys Regular'",
+
+
+    "launch": 
+    { 
+        "configurations":[
+            {       //Edge browser configuration
+                "name": "crank dat soldja boi",
+                "request": "launch",
+                "type": "msedge",
+                "url": "${workspaceFolder}",
+                "file": "${workspaceFolder}/index.html",
+                "webRoot": "${workspaceFolder}"
+            }
+        ]
     },
-    
+    "liveServer.settings.showOnStatusbar": true,
+    "workbench.settings.openDefaultSettings": true
+}
+/*    
     "media.player": {
         "players": [
             {
@@ -29,5 +44,6 @@
             }
         ]
     }
-}
+    */
+
 
