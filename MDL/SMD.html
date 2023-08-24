@@ -39,14 +39,21 @@
         <main>
             <h3 class="topic">What is within an SMD file?</h3>
             <p>We will be using the "garg_template_biped1.smd" file, As shown below:</p>
-            <img src="../img/SMD_REF_view.png">
+            <img alt="Half life model, similar to a cyclops" src="../img/SMD_REF_view.png">
 
             <p>there are two types of SMD'S (Usually referred as a MESH):</p>
 
-            <ul>
-                <li>MESH</li>
+            <h3 class="sub">MESH</h3>
+            <pre class="par">
+The physical object that is shown in the game, uses .BMP image files as textures, and is declared in the QC as $Body.
+            </pre>
+<img alt="Example of a mesh" src="../img/ACT_RUN_00.gif">
 
-            </ul>
+
+                <h3 class="sub">RIG</h3>
+            <pre class="par">
+The rig is responsible not only for handling animations but (in blender at least) also uses vertex groups to help define the area's each bone controls.
+            </pre>
 
 
  
