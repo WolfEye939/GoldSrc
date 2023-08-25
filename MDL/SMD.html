@@ -44,18 +44,20 @@
             <p>there are two types of SMD'S (Usually referred as a MESH):</p>
 
             <h3 class="sub">MESH</h3>
-            <pre class="par">
-The physical object that is shown in the game, uses .BMP image files as textures, and is declared in the QC as $Body.
-            </pre>
-<img alt="Example of a mesh" src="../img/ACT_RUN_00.gif">
+            <pre class="par">The physical object that is shown in the game, uses .BMP image files as textures, and is declared in the QC as $Body.</pre>
+            
+            <img alt="Animated example of a mesh" src="../img/ACT_RUN_00.gif">
 
 
                 <h3 class="sub">RIG</h3>
+            <pre class="par">The rig is responsible not only for handling animations but (at least in blender) also uses vertex groups to help define the area's that each bone controls.</pre>
+
+            <img alt="Animated example of a rig" src="../img/ACT_RUN_RIG_00.gif">
+
             <pre class="par">
-The rig is responsible not only for handling animations but (in blender at least) also uses vertex groups to help define the area's each bone controls.
-            </pre>
-
-
+In the example above The model's are the same, the only difference is the model is hidden in one, this represents how the rig is the MAIN contributer for animations.
+Now the way the SMD files are created (either from blender, GMAX, MAYA, or some other compatible model editor), DO matter. When you compile an animated model, the Only take the Rig (skeleton data), and the 
+</pre>
  
         </main>
 
