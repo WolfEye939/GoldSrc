@@ -37,28 +37,35 @@
 
 
         <main>
-            <h3 class="topic">What is within an SMD file?</h3>
-            <p>We will be using the "garg_template_biped1.smd" file, As shown below:</p>
-            <img alt="Half life model, similar to a cyclops" src="../img/SMD_REF_view.png">
+            <div>
+                <h3 class="topic">What is within an SMD file?</h3>
+                <p>We will be using the "garg_template_biped1.smd" file, As shown below:</p>
+                <img alt="Half life model, similar to a cyclops" src="../img/SMD_REF_view.png">
 
-            <p>there are two types of SMD'S (Usually referred as a MESH):</p>
+                <p>there are two types of SMD'S (Usually referred as a MESH):</p>
 
-            <h3 class="sub">MESH</h3>
-            <pre class="par">The physical object that is shown in the game, uses .BMP image files as textures, and is declared in the QC as $Body.</pre>
+                <h3 class="sub">MESH</h3>
+                <pre class="par">The physical object that is shown in the game, uses .BMP image files as textures, and is declared in the QC as $Body.</pre>
             
-            <img alt="Animated example of a mesh" src="../img/ACT_RUN_00.gif">
-
+                <img alt="Animated example of a mesh" src="../img/ACT_RUN_00.gif">
 
                 <h3 class="sub">RIG</h3>
-            <pre class="par">The rig is responsible not only for handling animations but (at least in blender) also uses vertex groups to help define the area's that each bone controls.</pre>
+                <pre class="par">The rig is responsible not only for handling animations but (at least in blender) also uses vertex groups to help define the area's that each bone controls.</pre>
 
-            <img alt="Animated example of a rig" src="../img/ACT_RUN_RIG_00.gif">
+                <img alt="Animated example of a rig" src="../img/ACT_RUN_RIG_00.gif">
 
-            <pre class="par">
+                <pre class="par">
 In the example above The model's are the same, the only difference is the model is hidden in one, this represents how the rig is the MAIN contributer for animations.
-Now the way the SMD files are created (either from blender, GMAX, MAYA, or some other compatible model editor), DO matter. When you compile an animated model, the Only take the Rig (skeleton data), and the 
+Now the way the SMD files are created (either from blender, GMAX, MAYA, or some other compatible model editor), DO matter. 
+When you compile an animated model, the only thing that is exported is the Rig (skeleton data), while the physical model is untouched (unless told otherwise from the editor).
 </pre>
- 
+            </div>
+
+            <div>
+                <h3 class="topic">Mesh SMD file breakdown</h3>
+                <p class="sub">I will be using <a href="../assets/garg_template_biped1.smd" target="_blank">garg_template_biped.smd</a> (the body mesh for the Gargantua monster in Half-life)</p>
+
+            </div>
         </main>
 
         <footer>

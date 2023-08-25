@@ -52,6 +52,10 @@ p.links {
     margin-bottom: 10px;
 }
 
+p.sub {
+    margin-top: 0px;
+}
+
 a.links 
 {
     border: 1.5mm #ff7f50;

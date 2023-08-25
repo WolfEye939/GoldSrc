@@ -9,6 +9,12 @@
             "request": "launch",
             "name": "FRICKIN SEND IT DUDE",
             "file": "${workspaceFolder}/index.html"
+        },
+
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "JS DEBUG",
         }
     ]
 }
