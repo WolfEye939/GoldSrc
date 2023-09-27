@@ -99,3 +99,17 @@ li
     margin-left: auto;
     margin-right: auto;
 }
+
+.img_smd {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.smd_sec {
+    background-color: #974629;
+    border: 5px inset #974629;
+
+    margin-bottom: 20px;
+}
