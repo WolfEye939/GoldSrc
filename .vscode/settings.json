@@ -31,7 +31,8 @@
     },
     "liveServer.settings.showOnStatusbar": true,
     "workbench.settings.openDefaultSettings": true,
-    "liveServer.settings.file": "./404.html"
+    "liveServer.settings.file": "./404.html",
+    "liveServer.settings.port": 81
 }
 /*    
     "media.player": {

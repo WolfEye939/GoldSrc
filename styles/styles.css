@@ -1,7 +1,11 @@
-@font-face 
-{
+@font-face {
     font-family: scripter;
     src: url(cour.ttf);
+}
+
+@font-face {
+    font-family: HL2;
+    src: url(halflife2.ttf);
 }
 
 
@@ -112,4 +116,11 @@ li
     border: 5px inset #974629;
 
     margin-bottom: 20px;
+}
+
+
+
+
+#404_logo {
+    font-family: 'Times New Roman';
 }
