@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "FRICKIN SEND IT DUDE",
-            "file": "${workspaceFolder}/index.html"
+            "name": "Commit Tax Fraud",
+            "file": "${workspaceFolder}"
         },
 
         {

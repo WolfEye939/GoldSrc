@@ -1,7 +1,4 @@
-function useless() {
-    console.log("WOAH YOU MUST BE SOME KINDA HACKER!!");
-}
-
+function useless() { console.log("WOAH YOU MUST BE SOME KINDA HACKER!!"); }
 useless();
 
 function RigTog() {
