@@ -15,20 +15,6 @@
     "“terminal.integrated.fontFamily”": "'FixedSys Regular'",
     "debugConsole.integrated.FontFamily": "'FixedSys Regular'",
 
-
-    "launch": 
-    { 
-        "configurations":[
-            {       //Edge browser configuration
-                "name": "crank dat soldja boi",
-                "request": "launch",
-                "type": "msedge",
-                "url": "${workspaceFolder}",
-                "file": "${workspaceFolder}/index.html",
-                "webRoot": "${workspaceFolder}"
-            }
-        ]
-    },
     "liveServer.settings.showOnStatusbar": true,
     "workbench.settings.openDefaultSettings": true,
     "liveServer.settings.file": "./404.html",

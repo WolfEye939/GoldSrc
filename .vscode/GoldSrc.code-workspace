@@ -1,0 +1,59 @@
+{
+	"folders": [
+		{
+			"path": "../../GoldSrc"
+		}
+	],
+	"settings": {
+
+		"workbench.colorTheme": "Steam Classic",
+        /*-------Color-------*/
+		"workbench.colorCustomizations": {
+			"debugConsole.sourceForeground": "#068f01",
+			"terminal.background":"#000000",
+			"terminal.foreground":"#068f01",
+			"editor.background": "#463737",
+			"editor.foreground":"#868f01",
+			"debugConsole.infoForeground":"#068f01"
+		},
+		"gutterpreview.showImagePreviewOnGutter": true,
+		"gutterpreview.imagePreviewMaxHeight": 256,
+		"gutterpreview.imagePreviewMaxWidth": 256,
+
+		"terminal.external.osxExec": "iTerm.app",
+		"terminal.integrated.fontFamily": "'FixedSys Regular'",
+		"debugConsole.integrated.FontFamily": "'FixedSys Regular'",
+	
+		"liveServer.settings.showOnStatusbar": true,
+		"workbench.settings.openDefaultSettings": true,
+		"liveServer.settings.file": "./404.html",
+		"liveServer.settings.port": 81
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+
+			{       //Edge browser configuration
+				"name": "crank dat soldja boi",
+				"request": "launch",
+				"type": "msedge",
+				"url": "${workspaceFolder}",
+				"file": "${workspaceFolder}/index.html",
+				"webRoot": "${workspaceFolder}"
+			},
+
+			{
+				"type": "msedge",
+				"request": "launch",
+				"name": "Commit Tax Fraud",
+				"file": "${workspaceFolder}"
+			},
+	
+			{
+				"type": "node-terminal",
+				"request": "launch",
+				"name": "JS DEBUG",
+			}
+		]
+	}
+}
